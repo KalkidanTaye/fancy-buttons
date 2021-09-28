@@ -11,7 +11,11 @@ function TextRepeaterButton() {
     setRepetitions(repetitions + 1);
   };
 
-  return <button className="TextRepeaterButton">{textArray}</button>;
+  return (
+    <button onClick={handleClick} className="TextRepeaterButton">
+      {textArray}
+    </button>
+  );
 }
 
 export default TextRepeaterButton;

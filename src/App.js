@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
-import AngryButtons from "./components/AngryButton";
-import CounterButtons from "./components/CounterButton";
-import LightSwitchButtons from "./components/LightSwitchButton";
-import TextRepeaterButtons from "./components/TextReapeaterButton";
+import AngryButton from "./components/AngryButton";
+import CounterButton from "./components/CounterButton";
+import LightSwitchButton from "./components/LightSwitchButton";
+import TextRepeaterButton from "./components/TextReapeaterButton";
 
 function App() {
   const [light, setLight] = useState("off");
@@ -12,10 +12,10 @@ function App() {
     <div className={`App ${dark}`}>
       <h1>Fancy Buttons</h1>
       <section>
-        <AngryButtons />
-        <CounterButtons />
+        <AngryButton />
+        <CounterButton />
         <LightSwitchButton light={light} setLight={setLight} />
-        <TextRepeaterButtons />
+        <TextRepeaterButton />
       </section>
     </div>
   );
